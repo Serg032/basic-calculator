@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/calculator.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <div class="instructions"></div>
+        <div class="result"></div>
+      </div>
+      <div class="keyboard">
+        <div class="row">
+          <button id="ac" class="gray instruction">Ac</button>
+          <button id="del" class="gray instruction">Del</button>
+          <button id="divide" class="orange instruction">/</button>
+          <button id="plus" class="orange instruction">*</button>
+        </div>
+        <div class="row">
+          <button id="seven" class="number">7</button>
+          <button id="eight" class="number">8</button>
+          <button id="nine" class="number">9</button>
+          <button id="minus" class="orange instruction">-</button>
+        </div>
+        <div class="row">
+          <button id="four" class="number">4</button>
+          <button id="five" class="number">5</button>
+          <button id="six" class="number">6</button>
+          <button id="add" class="orange instruction">+</button>
+        </div>
+        <div class="row">
+          <button id="one" class="number">1</button>
+          <button id="two" class="number">2</button>
+          <button id="three" class="number">3</button>
+          <button id="equal" class="orange instruction">=</button>
+        </div>
+        <div class="row">
+          <button id="zero" class="number zero">0</button>
+          <!-- <button id="dot" class="number dot">.</button> -->
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./dist/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+body {
+  background-image: url("../assets/4k.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh; /* Establece la altura del body al 100% de la altura de la ventana del navegador */
+  overflow: hidden; /* Oculta el contenido que exceda las dimensiones del body */
+  margin: 0; /* Elimina los márgenes por defecto */
+  padding: 0; /* Elimina el relleno por defecto */
+  display: flex; /* Opcional: para alinear los elementos internos */
+  flex-direction: column; /* Opcional: para la dirección de los elementos internos */
+  justify-content: center; /* Opcional: para centrar verticalmente el contenido */
+  align-items: center; /* Opcional: para centrar horizontalmente el contenido */
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(166, 166, 166, 0.491);
+  border-radius: 10px;
+  width: 85%;
+  height: 85vh;
+}
+
+.display {
+  width: 100%;
+  height: 35%;
+}
+
+.instructions {
+  width: 100%;
+  height: 30%;
+  color: white;
+  display: flex;
+  justify-content: end;
+  font-size: 2rem;
+}
+
+.result {
+  width: 100%;
+  height: 70%;
+  color: white;
+  display: flex;
+  justify-content: end;
+  font-size: 4rem;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  width: 20%;
+  height: 3rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 5px;
+}
+
+.gray {
+  background-color: rgba(166, 166, 166, 0.491);
+}
+
+.orange {
+  background-color: rgba(234, 101, 12, 0.5);
+}
+
+.light-blue {
+  background-color: rgba(233, 129, 60, 0.413);
+}
+
+.number {
+  background-color: rgba(71, 71, 71, 0.5);
+}
+
+.instructions,
+.result {
+  overflow-x: auto; /* Permite desplazamiento horizontal si el contenido excede el ancho */
+  overflow-y: auto;
+  word-break: break-all; /* Asegura que el contenido se ajuste al contenedor incluso si son palabras largas */
+}
+
+@media (width > 800px) {
+  .calculator {
+    width: 30rem;
+  }
+}
