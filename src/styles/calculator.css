@@ -69,7 +69,7 @@ button {
 }
 
 .gray {
-  background-color: rgba(166, 166, 166, 0.491);
+  background-color: rgba(255, 249, 249, 0.491);
 }
 
 .orange {
@@ -91,7 +91,7 @@ button {
   word-break: break-all; /* Asegura que el contenido se ajuste al contenedor incluso si son palabras largas */
 }
 
-@media (width > 800px) {
+@media (width > 600px) {
   .calculator {
     width: 30rem;
   }
